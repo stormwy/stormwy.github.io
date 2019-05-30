@@ -1,0 +1,14 @@
+body{
+    padding: 0 60px;
+    max-width: 1150px;
+    margin: 0 auto;
+    font: normal normal normal 14px/1 "Times New Roman" ,"Microsoft Yahei";
+}
+
+#nav-menu a{
+    font-size: 13px;
+}
+
+#nav-menu a.current {
+    font-weight: bold;
+}
