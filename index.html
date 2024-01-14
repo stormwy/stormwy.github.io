@@ -1,11 +1,12 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
+	<meta name="generator" content="Hugo 0.118.2">
 
     <meta charset="utf-8">
-    <meta name="generator" content="Hugo 0.54.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
 
     <title>Stormwy&#39;s Blog | 当你坚持不懈、挥汗如雨的时候，造物主未必都能够明鉴；但当你放浪形骸、自甘堕落的时候，全世界必会将你抛弃。</title>
     <meta property="og:title" content="Stormwy&#39;s Blog | 当你坚持不懈、挥汗如雨的时候，造物主未必都能够明鉴；但当你放浪形骸、自甘堕落的时候，全世界必会将你抛弃。">
@@ -13,26 +14,25 @@
     <meta name="Keywords" content="博客">
     <meta name="description" content="就是一个普普通通的博客.">
     <meta property="og:url" content="https://stormwy.github.io/">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href='/favicon.ico'  type="image/x-icon">
 
-    <link rel="stylesheet" href="/css/normalize.css">
-    
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="alternate" type="application/rss+xml+xml" href="https://stormwy.github.io/index.xml" title="Stormwy's Blog" />
-    <script type="text/javascript" src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-
-    
-
+    <link rel="stylesheet" href='/css/normalize.css'>
+    <link rel="stylesheet" href='/css/style.css'>
+    <link rel="alternate" type="application/rss+xml" href="https://stormwy.github.io/index.xml" title="Stormwy's Blog" />
+    <script type="text/javascript" src="//cdn.bootcdn.net/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     
     
-        <link rel="stylesheet" href="/css/custom.css">
+    
+    
+    
+    
+        <link rel="stylesheet" href='/css/custom.css'>
     
 </head>
 
-
 <body>
-<header id="header" class="clearfix">
+    <header id="header" class="clearfix">
     <div class="container">
         <div class="col-group">
             <div class="site-name ">
@@ -47,7 +47,7 @@
             </div>
             <div>
                 <nav id="nav-menu" class="clearfix">
-                    <a class="current" href="https://stormwy.github.io">首页</a>
+                    <a class="current" href="https://stormwy.github.io">Home</a>
                     
                     <a  href="https://stormwy.github.io/archives/" title="归档">归档</a>
                     
@@ -59,62 +59,128 @@
     </div>
 </header>
 
+    <div id="body">
+        <div class="container">
+            <div class="col-group">
 
-<div id="body">
-    <div class="container">
-        <div class="col-group">
+                <div class="col-8" id="main">
+                    
+<div class="res-cons">
+    
+    
+    <article class="post">
+        <header>
+            <h1 class="post-title">
+                <a href="https://stormwy.github.io/posts/migrate-springboot2-to-springboot3/" title="Migrate Springboot2 to Springboot3" target="_blank">Migrate Springboot2 to Springboot3</a>
+            </h1>
+        </header>
+        
+  <time datetime="2024-01-14T03:07:26Z" class="post-meta meta-date dt-published">
+    2024-01-14
+  </time>
 
-            <div class="col-8" id="main">
-                <div class="res-cons">
-                    
-                        <article class="post">
-                            <header>
-                                <h1 class="post-title">
-                                    <a href="https://stormwy.github.io/post/start_blogging_with_hugo/" title="开始使用hugo写博客" >开始使用hugo写博客</a>
-                                </h1>
-                            </header>
-                            <date class="post-meta meta-date">
-                                2019年3月29日
-                            </date>
-                            
-                            <div class="post-meta">
-                                <span>|</span>
-                                
-                                <span class="meta-category"><a href="https://stormwy.github.io/categories/%E9%BB%98%E8%AE%A4">默认</a></span>
-                                
-                            </div>
-                            
-                            <div class="post-content">
-                                之前用过Hexo来生成静态博客，但是感觉写的东西比较浅显，没能坚持写下来。并且因为重装系统后，重新checkout的hexo博客因为node……
-                            </div>
-                            <p class="readmore"><a href="https://stormwy.github.io/post/start_blogging_with_hugo/">阅读全文</a></p>
-                        </article>
-                    
 
-                    
+<div class="post-meta meta-category">
+  <span>&nbsp;|</span>
+  
+    <a href='/categories/%E9%BB%98%E8%AE%A4' target="_blank">默认</a>
+  
+</div>
+
+
+        <div class="post-content">
+            Official document： https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-3.0-Migration-Guide Others document: https://docs.openrewrite.org/recipes/java/spring/boot3 https://www.baeldung.com/spring-boot-3-migration https://zhuanlan.zhihu.com/p/574266547 https://www.cnblogs.com/lzfhope/p/16444613.html https://www.zhihu.com/question/61385975 Official Tools for Spring Boot3 migration Spring Boot Migrator (SBM) https://github.com/spring-projects-experimental/spring-boot-migrator PS: need to build this tool locally, because the latest release version was too old and there are some bugs were fixed in the latest source code. git checkout 0.15.2 mvn clean install -DskipTests Then the jar file will be created……
+        </div>
+        <p class="readmore"><a href="https://stormwy.github.io/posts/migrate-springboot2-to-springboot3/" target="_blank">Continue reading</a></p>
+    </article>
+    
+    
+    
+    <article class="post">
+        <header>
+            <h1 class="post-title">
+                <a href="https://stormwy.github.io/posts/start_blogging_with_hugo/" title="开始使用hugo写博客" target="_blank">开始使用hugo写博客</a>
+            </h1>
+        </header>
+        
+  <time datetime="2019-03-29T07:38:25Z" class="post-meta meta-date dt-published">
+    2019-03-29
+  </time>
+
+
+<div class="post-meta meta-category">
+  <span>&nbsp;|</span>
+  
+    <a href='/categories/%E9%BB%98%E8%AE%A4' target="_blank">默认</a>
+  
+</div>
+
+
+        <div class="post-content">
+            之前用过Hexo来生成静态博客，但是感觉写的东西比较浅显，没能坚持写下来。并且因为重装系统后，重新checkout的hexo博客因为node……
+        </div>
+        <p class="readmore"><a href="https://stormwy.github.io/posts/start_blogging_with_hugo/" target="_blank">Continue reading</a></p>
+    </article>
+    
+    
+    
+
+
+
+
+
+</div>
+
+                    <footer id="footer">
+    <div>
+        &copy; 2024 <a href="https://stormwy.github.io">Stormwy&#39;s Blog By stormwy</a>
+        
+    </div>
+    <br />
+    <div>
+        <div class="github-badge">
+            <a href="https://gohugo.io/" target="_black" rel="nofollow"><span class="badge-subject">Powered by</span><span class="badge-value bg-blue">Hugo</span></a>
+        </div>
+        <div class="github-badge">
+            <a href="https://www.flysnow.org/" target="_black"><span class="badge-subject">Design by</span><span class="badge-value bg-brightgreen">飞雪无情</span></a>
+        </div>
+        <div class="github-badge">
+            <a href="https://github.com/flysnow-org/maupassant-hugo" target="_black"><span class="badge-subject">Theme</span><span class="badge-value bg-yellowgreen">Maupassant</span></a>
+        </div>
+    </div>
+</footer>
+
+
+
+<a id="rocket" href="#top"></a>
+<script type="text/javascript" src='/js/totop.js?v=0.0.0' async=""></script>
+
 
 
 
 
                 </div>
-            </div>
 
-            <div id="secondary">
+                <div id="secondary">
     <section class="widget">
-        <form id="search" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
+        <form id="search" action='//www.google.com/search' method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
       
       <input type="text" name="q" maxlength="20" placeholder="Search">
       <input type="hidden" name="sitesearch" value="https://stormwy.github.io">
       <button type="submit" class="submit icon-search"></button>
 </form>
     </section>
-    
+
     <section class="widget">
-        <h3 class="widget-title">最近文章</h3>
+        <h3 class="widget-title">Latest articles</h3>
 <ul class="widget-list">
     
     <li>
-        <a href="https://stormwy.github.io/post/start_blogging_with_hugo/" title="开始使用hugo写博客">开始使用hugo写博客</a>
+        <a href="https://stormwy.github.io/posts/migrate-springboot2-to-springboot3/" title="Migrate Springboot2 to Springboot3" target="_blank">Migrate Springboot2 to Springboot3</a>
+    </li>
+    
+    <li>
+        <a href="https://stormwy.github.io/posts/start_blogging_with_hugo/" title="开始使用hugo写博客" target="_blank">开始使用hugo写博客</a>
     </li>
     
 </ul>
@@ -123,28 +189,28 @@
     
 
     <section class="widget">
-        <h3 class="widget-title">分类</h3>
+        <h3 class="widget-title"><a href='/categories/'>Categories</a></h3>
 <ul class="widget-list">
     
-    <li>
-        <a href="https://stormwy.github.io/categories/%E9%BB%98%E8%AE%A4/">默认(1)</a>
-    </li>
+    <li><a href="https://stormwy.github.io/categories/%E9%BB%98%E8%AE%A4/">默认 (2)</a></li>
     
 </ul>
     </section>
 
     <section class="widget">
-        <h3 class="widget-title">标签</h3>
+        <h3 class="widget-title"><a href='/tags/'>Tags</a></h3>
 <div class="tagcloud">
     
     <a href="https://stormwy.github.io/tags/hugo/">hugo</a>
+    
+    <a href="https://stormwy.github.io/tags/%E9%BB%98%E8%AE%A4/">默认</a>
     
 </div>
     </section>
 
     
 <section class="widget">
-    <h3 class="widget-title">友情链接</h3>
+    <h3 class="widget-title">Links</h3>
     <ul class="widget-list">
         
         <li>
@@ -156,35 +222,15 @@
 
 
     <section class="widget">
-        <h3 class="widget-title">其它</h3>
+        <h3 class="widget-title">Meta</h3>
         <ul class="widget-list">
-            <li><a href="https://stormwy.github.io/index.xml">文章 RSS</a></li>
+            <li><a href="https://stormwy.github.io/index.xml">RSS</a></li>
         </ul>
     </section>
 </div>
+            </div>
         </div>
     </div>
-</div>
-<footer id="footer">
-    <div class="container">
-        &copy; 2019 <a href="https://stormwy.github.io">Stormwy&#39;s Blog By stormwy</a>.
-        Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
-        <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/rujews/maupassant-hugo" target="_blank">maupassant</a>.
-        
-    </div>
-</footer>
-
-
-<a id="rocket" href="#top"></a>
-<script type="text/javascript" src="/js/totop.js?v=0.0.0" async=""></script>
-
-
-
-
-
-
-
-<script type="text/javascript" color="0,0,255" pointColor="0,255,0" zIndex="-99" src="https://cdn.bootcss.com/canvas-nest.js/2.0.4/canvas-nest.js"></script>
-
 </body>
+
 </html>

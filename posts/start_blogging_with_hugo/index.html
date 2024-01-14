@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <title>开始使用hugo写博客 | Stormwy&#39;s Blog</title>
+    <meta property="og:title" content="开始使用hugo写博客 - Stormwy&#39;s Blog">
+    <meta property="og:type" content="article">
+        
+    <meta property="article:published_time" content='2019-03-29T15:38:25&#43;08:00'>
+        
+        
+    <meta property="article:modified_time" content='2019-03-29T15:38:25&#43;08:00'>
+        
+    <meta name="Keywords" content="博客">
+    <meta name="description" content="介绍如何开启hugo博客之旅">
+        
+    <meta name="author" content="stormwy">
+    <meta property="og:url" content="https://stormwy.github.io/posts/start_blogging_with_hugo/">
+    <link rel="shortcut icon" href='/favicon.ico'  type="image/x-icon">
+
+    <link rel="stylesheet" href='/css/normalize.css'>
+    <link rel="stylesheet" href='/css/style.css'>
+    <script type="text/javascript" src="//cdn.bootcdn.net/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    
+    
+    
+    
+    
+    
+        <link rel="stylesheet" href='/css/custom.css'>
+    
+</head>
+
+<body>
+    <header id="header" class="clearfix">
+    <div class="container">
+        <div class="col-group">
+            <div class="site-name ">
+                
+                    <a id="logo" href="https://stormwy.github.io">
+                        Stormwy&#39;s Blog
+                    </a>
+                
+                <p class="description">当你坚持不懈、挥汗如雨的时候，造物主未必都能够明鉴；但当你放浪形骸、自甘堕落的时候，全世界必会将你抛弃。</p>
+            </div>
+            <div>
+                <nav id="nav-menu" class="clearfix">
+                    <a class="current" href="https://stormwy.github.io">Home</a>
+                    
+                    <a  href="https://stormwy.github.io/archives/" title="归档">归档</a>
+                    
+                    <a  href="https://stormwy.github.io/about/" title="关于">关于</a>
+                    
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <div id="body">
+        <div class="container">
+            <div class="col-group">
+
+                <div class="col-8" id="main">
+                    
+<div class="res-cons">
+    
+    <article class="post">
+        <header>
+            <h1 class="post-title">开始使用hugo写博客</h1>
+        </header>
+        
+  <time datetime="2019-03-29T07:38:25Z" class="post-meta meta-date dt-published">
+    2019-03-29
+  </time>
+
+
+<div class="post-meta meta-category">
+  <span>&nbsp;|</span>
+  
+    <a href='/categories/%E9%BB%98%E8%AE%A4' target="_blank">默认</a>
+  
+</div>
+
+
+        
+        
+        <div class="post-content">
+            <p>之前用过<code>Hexo</code>来生成静态博客，但是感觉写的东西比较浅显，没能坚持写下来。并且因为重装系统后，重新checkout的hexo博客因为node module过时的问题，无法正常运行，感觉nodejs的库还是不太稳定，于是放弃<code>Hexo</code>,转投<code>go</code>语言开发的<code>hugo</code>。</p>
+<h2 id="安装">安装</h2>
+<p>windows下直接到github下载即可：<a href="https://github.com/gohugoio/hugo/releases">hugo download</a>.   <br>
+下载后，解压<code>hugo.exe</code>到自定义的文件夹，将该文件夹路径添加到系统path就可以使用<code>hugo</code>命令了。   <br>
+运行下面命令试试<code>hugo</code>是否完全安装好了。</p>
+<pre tabindex="0"><code>hugo version
+</code></pre><h2 id="初始化--配置">初始化 &amp; 配置</h2>
+<p>在任意目录cmd里运行下面命令即可创建一个名字为<code>hugoBlog</code>的博客文件夹</p>
+<pre tabindex="0"><code>hugo new site hugoBlog
+</code></pre><p>运行成功后，可以看见生成的<code>hugoBlog</code>目录里面有很多自动生成的文件夹。 <br>
+我们通过git来管理博客文件内容，git初始化如下。</p>
+<pre tabindex="0"><code>cd hugoBlog
+git init
+</code></pre><p>在首次运行之前，我们还需要为hugo添加主题模板，因为默认是没有内置主题的。 <br>
+我们到<a href="https://themes.gohugo.io/">themes.gohugo.io</a>去找喜欢的主题，然后在<code>hugoBlog</code>目录通过git将主题下载到<code>themes</code>目录。 以<code>maupassant-hugo</code>这个主题为例：</p>
+<pre tabindex="0"><code>cd themes
+git clone https://github.com/rujews/maupassant-hugo.git
+</code></pre><p>执行完成后，在<code>themes</code>目录可以看到下载的<code>maupassant-hugo</code>主题。</p>
+<p>然后我们还需要按照<code>maupassant-hugo</code>主题的说明，编辑<code>hugoBlog</code>目录下的<code>config.toml</code>配置文件，个人的配置如下：</p>
+<pre tabindex="0"><code>baseURL = &#34;http://stormwy.github.io&#34;
+languageCode = &#34;zh-CN&#34;
+title = &#34;Stormwy&#39;s Blog&#34;
+hasCJKLanguage = true
+theme = &#34;maupassant-hugo&#34;
+enableRobotsTXT = true
+PaginatePath = &#34;page&#34;
+
+[author]
+    name = &#34;stormwy&#34;
+    homepage = &#34;https://github.com/stormwy&#34;
+
+[params]
+    subtitle = &#34;当你坚持不懈、挥汗如雨的时候，造物主未必都能够明鉴；但当你放浪形骸、自甘堕落的时候，全世界必会将你抛弃。&#34;
+    description = &#34;就是一个普普通通的博客.&#34;
+    keywords = &#34;博客&#34;
+
+    customCSS = [&#34;custom.css&#34;]
+    #customJS = [&#34;app.extra.js&#34;]
+
+    search_provider = &#34;google&#34;
+
+[params.utteranc]
+    enable = true
+    repo = &#34;stormwy/blog-comments&#34;
+    issueTerm = &#34;pathname&#34;
+    theme = &#34;github-light&#34;
+
+[[params.links]]
+
+
+
+[[menu.main]]
+    identifier = &#34;archives&#34;
+    name = &#34;归档&#34;
+    url = &#34;/archives/&#34;
+    weight = 2
+
+[[menu.main]]
+    identifier = &#34;about&#34;
+    name = &#34;关于&#34;
+    url = &#34;/about/&#34;
+    weight = 3
+</code></pre><p>现在可以运行看看效果了，运行下面命令，访问<a href="http://localhost:1313">localhost:1313</a></p>
+<pre tabindex="0"><code>hugo server -D
+</code></pre><h2 id="写文章">写文章</h2>
+<p>通过下面命令新建文章，然后手动打开编辑该文件即可，每次保存文章，浏览器会自动重新渲染。</p>
+<pre tabindex="0"><code>hugo new posts/MyFirstHugoBlog/index.md
+</code></pre><h2 id="图片插入">图片插入</h2>
+<p>通过上面这种方式新建文章，会同时创建了一个<code>MyFirstHugoBlog</code>目录。当我们需要插入图片的时候，把图片放到该目录底下，通过相对引用的方式使用即可。比如把example.jpg放到了MyFirstHugoBlog，在index.md中使用下面方式即可引用到，这样的引用方式，支持在markdown编辑器预览，而且在文章发布后，也能渲染出来。</p>
+<pre tabindex="0"><code>![example.jpg](./example.jpg)
+</code></pre><p>一些markdown编辑器，例如Typora还支持图片粘贴，粘贴的图片会直接放到index.md同样的目录里，用的就是上面的方式，这样插入图片就很方便了。</p>
+<h2 id="发布博客">发布博客</h2>
+<p>记得将需要发布的文章的内容里<code>draft: false</code>标识的值改为<code>true</code>，然后运行下面命令</p>
+<pre tabindex="0"><code>hugo
+</code></pre><p>会生成静态文件到<code>public</code>目录，最后将这些静态博客文件推送到github page或者自己的静态文件服务器上即可。</p>
+
+        </div>
+
+        
+
+
+        
+
+<div class="post-archive">
+    <h2>See Also</h2>
+    <ul class="listing">
+        
+        <li><a href="/archives/">Archives</a></li>
+        
+    </ul>
+</div>
+
+
+        <div class="post-meta meta-tags">
+            
+            <ul class="clearfix">
+                
+                <li><a href='/tags/hugo' target="_blank">hugo</a></li>
+                
+            </ul>
+            
+        </div>
+    </article>
+    
+    
+
+    
+    
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "stormwy/blog-comments"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+    
+    
+    
+
+</div>
+
+                    <footer id="footer">
+    <div>
+        &copy; 2024 <a href="https://stormwy.github.io">Stormwy&#39;s Blog By stormwy</a>
+        
+    </div>
+    <br />
+    <div>
+        <div class="github-badge">
+            <a href="https://gohugo.io/" target="_black" rel="nofollow"><span class="badge-subject">Powered by</span><span class="badge-value bg-blue">Hugo</span></a>
+        </div>
+        <div class="github-badge">
+            <a href="https://www.flysnow.org/" target="_black"><span class="badge-subject">Design by</span><span class="badge-value bg-brightgreen">飞雪无情</span></a>
+        </div>
+        <div class="github-badge">
+            <a href="https://github.com/flysnow-org/maupassant-hugo" target="_black"><span class="badge-subject">Theme</span><span class="badge-value bg-yellowgreen">Maupassant</span></a>
+        </div>
+    </div>
+</footer>
+
+
+    
+    
+    <script type="text/javascript">
+        window.MathJax = {
+            tex2jax: {
+                inlineMath: [['$', '$']],
+                processEscapes: true
+                }
+            };
+    </script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+<a id="rocket" href="#top"></a>
+<script type="text/javascript" src='/js/totop.js?v=0.0.0' async=""></script>
+<style type="text/css">
+div.highlight {
+    position: relative;
+    margin: 1em 0px;
+}
+
+.copy-code {
+    display: none;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    color: rgba(255, 255, 255, 0.8);
+    background: rgba(78, 78, 78, 0.8);
+    border-radius: var(--radius);
+    padding: 0 5px;
+    font: inherit;
+    user-select: none;
+    cursor: pointer;
+    border: 0;
+    --radius: 8px;
+}
+
+div.highlight:hover .copy-code,pre:hover .copy-code {
+    display: block;
+}
+
+</style>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+
+
+
+
+
+                </div>
+
+                <div id="secondary">
+    <section class="widget">
+        <form id="search" action='//www.google.com/search' method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
+      
+      <input type="text" name="q" maxlength="20" placeholder="Search">
+      <input type="hidden" name="sitesearch" value="https://stormwy.github.io">
+      <button type="submit" class="submit icon-search"></button>
+</form>
+    </section>
+
+    <section class="widget">
+        <h3 class="widget-title">Latest articles</h3>
+<ul class="widget-list">
+    
+    <li>
+        <a href="https://stormwy.github.io/posts/migrate-springboot2-to-springboot3/" title="Migrate Springboot2 to Springboot3" target="_blank">Migrate Springboot2 to Springboot3</a>
+    </li>
+    
+    <li>
+        <a href="https://stormwy.github.io/posts/start_blogging_with_hugo/" title="开始使用hugo写博客" target="_blank">开始使用hugo写博客</a>
+    </li>
+    
+</ul>
+    </section>
+
+    
+
+    <section class="widget">
+        <h3 class="widget-title"><a href='/categories/'>Categories</a></h3>
+<ul class="widget-list">
+    
+    <li><a href="https://stormwy.github.io/categories/%E9%BB%98%E8%AE%A4/">默认 (2)</a></li>
+    
+</ul>
+    </section>
+
+    <section class="widget">
+        <h3 class="widget-title"><a href='/tags/'>Tags</a></h3>
+<div class="tagcloud">
+    
+    <a href="https://stormwy.github.io/tags/hugo/">hugo</a>
+    
+    <a href="https://stormwy.github.io/tags/%E9%BB%98%E8%AE%A4/">默认</a>
+    
+</div>
+    </section>
+
+    
+<section class="widget">
+    <h3 class="widget-title">Links</h3>
+    <ul class="widget-list">
+        
+        <li>
+            <a target="_blank" href="" title=""></a>
+        </li>
+        
+    </ul>
+</section>
+
+
+    <section class="widget">
+        <h3 class="widget-title">Meta</h3>
+        <ul class="widget-list">
+            <li><a href="https://stormwy.github.io/index.xml">RSS</a></li>
+        </ul>
+    </section>
+</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

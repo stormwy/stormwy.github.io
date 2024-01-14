@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Stormwy&#39;s Blog</title>
@@ -6,13 +6,18 @@
     <description>Recent content in Tags on Stormwy&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 29 Mar 2019 15:38:25 +0800</lastBuildDate>
-    
-	<atom:link href="https://stormwy.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Sun, 14 Jan 2024 11:07:26 +0800</lastBuildDate><atom:link href="https://stormwy.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>默认</title>
+      <link>https://stormwy.github.io/tags/%E9%BB%98%E8%AE%A4/</link>
+      <pubDate>Sun, 14 Jan 2024 11:07:26 +0800</pubDate>
+      
+      <guid>https://stormwy.github.io/tags/%E9%BB%98%E8%AE%A4/</guid>
+      <description></description>
+    </item>
     
     <item>
-      <title>Hugo</title>
+      <title>hugo</title>
       <link>https://stormwy.github.io/tags/hugo/</link>
       <pubDate>Fri, 29 Mar 2019 15:38:25 +0800</pubDate>
       

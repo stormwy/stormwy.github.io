@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>默认 on Stormwy&#39;s Blog</title>
-    <link>https://stormwy.github.io/categories/%E9%BB%98%E8%AE%A4/</link>
+    <link>https://stormwy.github.io/tags/%E9%BB%98%E8%AE%A4/</link>
     <description>Recent content in 默认 on Stormwy&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 14 Jan 2024 11:07:26 +0800</lastBuildDate><atom:link href="https://stormwy.github.io/categories/%E9%BB%98%E8%AE%A4/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 14 Jan 2024 11:07:26 +0800</lastBuildDate><atom:link href="https://stormwy.github.io/tags/%E9%BB%98%E8%AE%A4/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Migrate Springboot2 to Springboot3</title>
       <link>https://stormwy.github.io/posts/migrate-springboot2-to-springboot3/</link>
@@ -14,15 +14,6 @@
       
       <guid>https://stormwy.github.io/posts/migrate-springboot2-to-springboot3/</guid>
       <description>Official document： https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-3.0-Migration-Guide Others document: https://docs.openrewrite.org/recipes/java/spring/boot3 https://www.baeldung.com/spring-boot-3-migration https://zhuanlan.zhihu.com/p/574266547 https://www.cnblogs.com/lzfhope/p/16444613.html https://www.zhihu.com/question/61385975 Official Tools for Spring Boot3 migration Spring Boot Migrator (SBM) https://github.com/spring-projects-experimental/spring-boot-migrator PS: need to build this tool locally, because the latest release version was too old and there are some bugs were fixed in the latest source code. git checkout 0.15.2 mvn clean install -DskipTests Then the jar file will be created</description>
-    </item>
-    
-    <item>
-      <title>开始使用hugo写博客</title>
-      <link>https://stormwy.github.io/posts/start_blogging_with_hugo/</link>
-      <pubDate>Fri, 29 Mar 2019 15:38:25 +0800</pubDate>
-      
-      <guid>https://stormwy.github.io/posts/start_blogging_with_hugo/</guid>
-      <description>之前用过Hexo来生成静态博客，但是感觉写的东西比较浅显，没能坚持写下来。并且因为重装系统后，重新checkout的hexo博客因为node</description>
     </item>
     
   </channel>
