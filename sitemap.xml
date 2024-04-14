@@ -2,34 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://stormwy.github.io/categories/</loc>
-    <lastmod>2024-01-14T11:07:26+08:00</lastmod>
-  </url><url>
-    <loc>https://stormwy.github.io/posts/migrate-springboot2-to-springboot3/</loc>
-    <lastmod>2024-01-14T11:07:26+08:00</lastmod>
-  </url><url>
-    <loc>https://stormwy.github.io/posts/</loc>
-    <lastmod>2024-01-14T11:07:26+08:00</lastmod>
-  </url><url>
-    <loc>https://stormwy.github.io/</loc>
-    <lastmod>2024-01-14T11:07:26+08:00</lastmod>
-  </url><url>
-    <loc>https://stormwy.github.io/tags/</loc>
-    <lastmod>2024-01-14T11:07:26+08:00</lastmod>
-  </url><url>
-    <loc>https://stormwy.github.io/tags/%E9%BB%98%E8%AE%A4/</loc>
-    <lastmod>2024-01-14T11:07:26+08:00</lastmod>
-  </url><url>
-    <loc>https://stormwy.github.io/categories/%E9%BB%98%E8%AE%A4/</loc>
-    <lastmod>2024-01-14T11:07:26+08:00</lastmod>
-  </url><url>
     <loc>https://stormwy.github.io/about/</loc>
     <lastmod>2019-04-03T17:35:59+08:00</lastmod>
+  </url><url>
+    <loc>https://stormwy.github.io/categories/</loc>
+    <lastmod>2019-03-29T15:38:25+08:00</lastmod>
   </url><url>
     <loc>https://stormwy.github.io/tags/hugo/</loc>
     <lastmod>2019-03-29T15:38:25+08:00</lastmod>
   </url><url>
+    <loc>https://stormwy.github.io/posts/</loc>
+    <lastmod>2019-03-29T15:38:25+08:00</lastmod>
+  </url><url>
+    <loc>https://stormwy.github.io/</loc>
+    <lastmod>2019-03-29T15:38:25+08:00</lastmod>
+  </url><url>
+    <loc>https://stormwy.github.io/tags/</loc>
+    <lastmod>2019-03-29T15:38:25+08:00</lastmod>
+  </url><url>
     <loc>https://stormwy.github.io/posts/start_blogging_with_hugo/</loc>
+    <lastmod>2019-03-29T15:38:25+08:00</lastmod>
+  </url><url>
+    <loc>https://stormwy.github.io/categories/%E9%BB%98%E8%AE%A4/</loc>
     <lastmod>2019-03-29T15:38:25+08:00</lastmod>
   </url><url>
     <loc>https://stormwy.github.io/archives/</loc>
